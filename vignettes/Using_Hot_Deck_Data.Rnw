@@ -89,7 +89,6 @@ for(i in 1:length(out$data)){
 % In version $\geq 5.0$ of \verb"Zelig", the output from \verb"hot.deck" will have to be converted into a format that looks like Amelia's.  You can do this as follows: 
 % 
 % <<hd2amelia, echo=T, include=T>>=
-% out <- hd2amelia(out)
 % @
 % 
 % \noindent Then, with the output in the appropriate format, we can use \verb"Zelig" to do the modeling. 
@@ -116,6 +115,7 @@ You can use the \verb"MIcombine" command from the \verb"mitools" package to gene
 \begin{scriptsize}
 <<mods, echo=T, include=T>>=
 # initialize list
+out <- hd2amelia(out)
 results <- list()
 # loop over imputed datasets
 for(i in 1:length(out$imputations)){
