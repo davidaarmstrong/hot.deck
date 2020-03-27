@@ -140,7 +140,7 @@ print(s, digits=4)
 @
 \end{scriptsize}
 
-\bibliographystyle{harvard}
+\bibliographystyle{apsr}
 \bibliography{hot.deck}
 
 
